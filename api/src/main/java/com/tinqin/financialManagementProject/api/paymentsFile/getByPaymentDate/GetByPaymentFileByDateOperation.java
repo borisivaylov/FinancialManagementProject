@@ -1,0 +1,6 @@
+package com.tinqin.financialManagementProject.api.paymentsFile.getByPaymentDate;
+
+import com.tinqin.financialManagementProject.api.base.OperationListProcessor;
+
+public interface GetByPaymentFileByDateOperation extends OperationListProcessor<GetByPaymentFileByDateRequest,GetByPaymentFileByDateResponse> {
+}
