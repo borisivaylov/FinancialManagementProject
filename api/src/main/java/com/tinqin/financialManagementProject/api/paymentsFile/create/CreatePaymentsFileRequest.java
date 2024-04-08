@@ -15,5 +15,7 @@ public class CreatePaymentsFileRequest implements OperationInput {
 
     @JsonProperty("DateOfPayment")
     private Timestamp dateOfPayment;
+    @JsonProperty("IBANPayment")
+    private String IBANPayment;
 
 }

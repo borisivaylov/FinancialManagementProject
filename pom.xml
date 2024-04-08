@@ -29,6 +29,7 @@
         <java.version>17</java.version>
         <revision>0.0.1-SNAPSHOT</revision>
         <accounting>0.0.1-SNAPSHOT</accounting>
+        <security>0.0.1-SNAPSHOT</security>
     </properties>
 
     <dependencies>

@@ -27,6 +27,7 @@ public class GetPaymentsFileByIdOperationProcessor implements GetPaymentsFileByI
 
         return GetPaymentsFileByIdResponse.builder()
                 .paymentFileID(paymentsFile.getUuid())
+                .paymentUnitList(paymentsFile.getPaymentUnitList())
                 .invoicesForPayment(paymentsFile.getInvoicesForPayment())
                 .dateOfCreation(paymentsFile.getDateOfCreation())
                 .Employee(paymentsFile.getEmployee())

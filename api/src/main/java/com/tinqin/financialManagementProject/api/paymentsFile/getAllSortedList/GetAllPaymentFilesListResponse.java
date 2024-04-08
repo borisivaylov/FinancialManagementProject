@@ -3,6 +3,7 @@ package com.tinqin.financialManagementProject.api.paymentsFile.getAllSortedList;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.tinqin.accountingproject.persistence.entity.Invoice;
 import com.tinqin.financialManagementProject.api.base.OperationResult;
+import com.tinqin.financialManagementProject.persistence.entity.PaymentUnit;
 import lombok.*;
 
 import java.sql.Timestamp;
@@ -19,6 +20,8 @@ public class GetAllPaymentFilesListResponse implements OperationResult {
     private UUID paymentFileID;
     @JsonProperty("Invoices")
     private List<String> invoicesForPayment;
+    @JsonProperty
+    private List<PaymentUnit> paymentUnitList;
     @JsonProperty("DateOfCreation")
     private Timestamp dateOfCreation;
     @JsonProperty("EmployeeSign")
